@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+    <h1>JavaScript String Method 1</h1>
+    <h3>The length Property</h3>
+    <p>The length of this string is:</p>
+    <p id="StringLength"></p>
+    <script>
+        let text1 = "Here is the length of this string:";
+        document.getElementById("StringLength").innerHTML = text1.length;
+    </script>
+    <hr>
+
+    <h1>JavaScript String Method 2</h1>    
+    <h3>The replaceAll() Method</h3>
+    <p>ES2021 introduced the string method replaceAll().</p>
+    <p id="StringReplace">I'm having Responsive Webapps unit lectures on Monday</p>
+    <button onclick="replaceFunction()">Give it a go</button>
+
+    <script>
+        function replaceFunction() {
+            let text2 = document.getElementById("StringReplace").innerHTML;
+            document.getElementById("StringReplace").innerHTML = text2.replaceAll("Monday", "Friday");
+        }
+    </script>
+    <hr>
+
+    <h1>JavaScript String Method 3</h1>
+    <h3>Convert string to upper case</h3>
+    <p id="StrToUp">Hello world!</p>
+    <button onclick="toUpperCaseFunction()">Try it</button>
+
+    <script>
+        function toUpperCaseFunction() {
+            let text3 = document.getElementById("StrToUp").innerHTML;
+            document.getElementById("StrToUp").innerHTML = text3.toUpperCase();
+        }
+    </script>
+    <hr>
+    
+    <h1>JavaScript String Method 4</h1>
+    <h3>Convert string to lower case</h3>
+    <p id="StrToLow">HEY! HOW ARE YOU?</p>
+    <button onclick="toLowerCaseFunction()">Click it</button>
+
+    <script>
+        function toLowerCaseFunction() {
+            let text4 = document.getElementById("StrToLow").innerHTML;
+            document.getElementById("StrToLow").innerHTML = text4.toLowerCase();
+        }
+    </script>
+    <hr>
+
+    <h1>JavaScript String Method 5</h1>
+    <h3>The trim() Method</h3>
+    <p id="StrTrim"></p>
+
+    <script>
+        let text5 = "     Hey Siri!     ";
+        let trimmedText = text5.trim();
+
+        document.getElementById("StrTrim").innerHTML =
+        "Length text5 = " + text5.length + "<br>Length trimmedText = " + trimmedText.length;
+    </script>
+</body>
+</html>

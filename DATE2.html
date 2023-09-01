@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Date Method 1</h1>
+    <h3>Using new Date()</h3>
+    <p>Create a new date object with the current date and time.</p>
+    <p id="Date"></p>
+    <script>
+        const day = new Date();
+        document.getElementById("Date").innerHTML = day;
+    </script>
+    <hr>
+
+    <h1>JavaScript Date Method 2</h1>
+    <h3>The getDay() Method</h3>
+    <p>Return the weekday as a weekday.</p>
+    <p id="Day"></p>
+    <script>
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const week = new Date();
+        let weekdays = days[week.getDay()];
+        document.getElementById("Day").innerHTML = weekdays;
+    </script>
+    <hr>
+
+    <h1>JavaScript Date Method 3</h1>
+    <h3>The Date.Now Method</h3>
+    <p>Return the current date/time in milliseconds since January 1, 1970:</p>
+    <p id="yrs"></p>
+
+    <script>
+        // Use Date.now() to get current timestamp in milliseconds since January 1, 1970
+        const currentTimestamp = Date.now();
+
+        document.getElementById("yrs").innerHTML = currentTimestamp + " milliseconds since January 1, 1970";
+    </script>
+    <hr>
+     
+    <h1>JavaScript Date Method 4</h1>
+    <h3>new Date(year, month, ...)</h3>
+    <p>new Date(year, month, ...) creates a date object with a specified date and time. 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order).</p>
+    <p id="seven"></p>
+    <script>
+        const dd = new Date(2023, 10, 12, 12, 45, 30, 0);
+        document.getElementById("seven").innerHTML = dd;
+    </script>
+    <hr>
+
+    <h1>JavaScript Date Method 5</h1>
+    <h3>The toString() Method</h3>
+    <p>Convert a date to a string.</p>
+    <p id="dtostr"></p>
+    <script>
+        const dat = new Date();
+        document.getElementById("dtostr").innerHTML = dat.toString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Function 1</h1>
+    <h3>Using a function as a variable</h3>
+    <p>A function that converts from Kilograms to Pounds:</p>
+    <p id="convertResult"></p>
+    <p id="convertDetails"></p>
+    <script>
+        let kilograms = 56;
+        let pounds = topounds(kilograms);
+        document.getElementById("convertResult").innerHTML = `The weight is ${pounds}`;
+
+        function topounds(kilograms) {
+            // Details about the function
+            let details = `This function converts kilograms to pounds. 1 kilogram is approximately equal to 2.2 pounds.`;
+            document.getElementById("convertDetails").innerHTML = details;
+
+            // Conversion details
+            let conversionInfo = `${kilograms} kilograms are converted to approximately ${kilograms * 2.2} pounds.`;
+            return conversionInfo;
+        } 
+    </script>
+    <hr>
+
+    <h1>JavaScript Function 2</h1>
+    <h3>The Operation function</h3>
+    <p>Calculates a complex mathematical operation:</p>
+    <p id="operationResult"></p>
+    <p id="operationDetails"></p>
+    <script>
+        let a = 18;
+        let b = 5;
+        let result = operation(a, b);
+        document.getElementById("operationResult").innerHTML = `The result of the operation is ${result}`;
+
+        function operation(a, b) {
+            // Details about the function
+            let details = `This function performs a complex operation: ${a} * ${b} + 7 + ${a} + ${b}`;
+            document.getElementById("operationDetails").innerHTML = details;
+            return a * b + 7 + a + b;
+        }
+    </script>
+</body>
+</html>

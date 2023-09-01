@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Number Methods</title>
+</head>
+<body>
+    <h1>JavaScript Number Method 1</h1>
+    <h3>The toString() method</h3>
+    <p>The toString() method converts a number to a string.</p>
+    <p id="toString"></p>
+
+    <script>
+        let number = 123;
+        document.getElementById("toString").innerHTML =
+            number.toString() + " | " +
+            (123).toString() + " | " +
+            (100 + 23).toString();
+    </script>
+    <hr>
+
+    <h1>JavaScript Number Method 2</h1>
+    <h3>The toFixed() method</h3>
+    <p>The toFixed() method rounds a number to a given number of digits.</p>
+    <p id="toFixed"></p>
+
+    <script>
+        let num = 12.584;
+        document.getElementById("toFixed").innerHTML =
+            num.toFixed(0) + "<br>" +
+            num.toFixed(1) + "<br>" +
+            num.toFixed(3) + "<br>" +
+            num.toFixed(6);
+    </script>
+    <hr>
+
+    <h1>JavaScript Number Method 3</h1>
+    <h3>The valueOf() method</h3>
+    <p>The valueOf() method returns a number as a number.</p>
+    <p id="valueOf"></p>
+
+    <script>
+        let val = 987;
+        document.getElementById("valueOf").innerHTML = 
+            val.valueOf() + "<br>" +
+            (987).valueOf() + "<br>" +
+            (900 + 87).valueOf();
+    </script>
+    <hr>
+
+    <h1>JavaScript Number Method 4</h1>
+    <h3>The toExponential() method</h3>
+    <p>An optional parameter defines the number of digits behind the decimal point.</p>
+    <p id="toExponential"></p>
+
+    <script>
+        let y = 254.871;
+        document.getElementById("toExponential").innerHTML =
+            y.toExponential(1) + " | " + 
+            y.toExponential(2) + " | " + 
+            y.toExponential(4) + " | " + 
+            y.toExponential(6);
+    </script>
+    <hr>
+
+    <h1>JavaScript Number Method 5</h1>
+    <h3>The toPrecision() method</h3>    
+    <p>toPrecision() method returns a string, with a number written with a specified length.</p>
+    <p id="toPrecision"></p>
+
+    <script>
+        let a = 874.23;
+        document.getElementById("toPrecision").innerHTML = 
+            a.toPrecision() + " | " +
+            a.toPrecision(2) + " | " +
+            a.toPrecision(4) + " | " +
+            a.toPrecision(6);  
+    </script>
+</body>
+</html>
